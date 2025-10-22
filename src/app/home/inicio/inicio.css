@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   text-align: center;
   position: relative;
 }
@@ -70,4 +70,88 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.hero-footer {
+  padding: 40px 20px 20px;
+  text-align: center;
+  color: #ccc;
+  position: relative;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hero-logo-footer {
+  width: 100px;
+  height: auto;
+  filter: brightness(0.9);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.hero-logo-footer:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+.footer-text p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0 auto 15px;
+  line-height: 1.4;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #777;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* Campo de entrada */
+.form-input {
+  width: 50%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  outline: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.form-input:hover,
+.form-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+.hero-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  /* padding: 40px 30px; */
+  /* max-width: 400px; */
+  /* margin: 80px auto; */
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease;
 }
