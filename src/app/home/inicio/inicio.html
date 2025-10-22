@@ -3,11 +3,11 @@
         <div class="hero-content">
             <img class="hero-logo" src="assets/dislicores.png" alt="Logo de Dislicores" />
 
-            <h1 class="hero-title">!Gracias por estar aqui!</h1>
+            <h1 class="hero-title">!Recuerda!</h1>
             <div class="hero-form">
                 <p class="form-text">Debes tener 18 años para visitar nuestro sitio</p>
 
-                <form (ngSubmit)="verificarEdad()">
+                <form (ngSubmit)="verificarEdad()" class="form">
                     <label for="date" class="form-label">Verifiquemos tu edad</label>
                     <input type="date" id="date" class="form-input" required [(ngModel)]="fechaNacimiento"  name="fechaNacimiento" />
                     <button type="submit" class="hero-button">Ingresar</button>

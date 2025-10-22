@@ -27,9 +27,9 @@ export class Inicio {
       ? edad - 1
       : edad;
     if (edadFinal >= 18) {
-      this.router.navigate(['/productos']);
+      this.router.navigate(['/dashboard']);
     } else {
-      this.mensaje = '🚫 Debes tener al menos 18 años para ingresar.';
+      this.mensaje = '🚫 Lo sentimos, no es posible dejarte continuar';
 
     }
   }
