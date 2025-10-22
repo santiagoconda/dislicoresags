@@ -1,0 +1,62 @@
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.categorias-card {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+.card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  text-align: justify;
+  color: #fff;
+}
+
+.card-content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: 'Ailey Display', 'Poller One', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #D96314, #E7B505);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+
+}
+
+
+
+.card-button {
+  transform: translateY(20px);
+  background: linear-gradient(135deg, #802035, #D96314);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+}
+

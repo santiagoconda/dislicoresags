@@ -1,1 +1,11 @@
-<p>cantegorias works!</p>
+<p>Categorías</p>
+
+<div class="categorias">
+  <div class="categorias-card" *ngFor="let categoria of categorias">
+    <div class="card-content">
+      <h2>{{ categoria.name }}</h2>
+      <p class="card-description">{{ categoria.description }}</p>
+      <button class="card-button">Explorar</button>
+    </div>
+  </div>
+</div>

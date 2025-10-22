@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Navar } from "../navar/navar";
-
+import { category } from '../../models/category';
+import { Cantegorias } from '../../producto/cantegorias/cantegorias';
 @Component({
   selector: 'app-dashboard',
-  imports: [Navar],
+  imports: [Cantegorias],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css'
 })

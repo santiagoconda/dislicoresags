@@ -5,9 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 65vh;
   text-align: center;
   position: relative;
+
 }
 
 /* Contenido principal */
@@ -28,10 +29,12 @@
 
 /* Título */
 .hero-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  font-family: 'Ailey Display', 'Poller One', sans-serif;
+  background: linear-gradient(to bottom, #D96314, #E7B505);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+
 }
 
 /* Subtítulo */
@@ -40,11 +43,12 @@
   color: #ccc;
   margin-bottom: 30px;
   line-height: 1.5;
+
 }
 
 /* Botón */
 .hero-button {
-  background: linear-gradient(135deg, #ff0057, #ff7b00);
+  background: linear-gradient(135deg, #802035, #D96314);
   border: none;
   color: white;
   padding: 12px 28px;
@@ -147,8 +151,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 10px ;
-  /* max-width: 400px; */
-  /* margin: 80px auto; */
+
   text-align: center;
   color: #fff;
   backdrop-filter: blur(8px);

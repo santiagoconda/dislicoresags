@@ -14,7 +14,7 @@ export class Inicio {
   constructor(private router: Router) { }
   verificarEdad() {
     if (!this.fechaNacimiento) {
-      this.mensaje = 'porfavor fecha de nacimiento'
+      this.mensaje = 'Porfavor ingresa tu fecha de Nacimiento'
       return;
 
     }
@@ -29,7 +29,7 @@ export class Inicio {
     if (edadFinal >= 18) {
       this.router.navigate(['/dashboard']);
     } else {
-      this.mensaje = '🚫 Lo sentimos, no es posible dejarte continuar';
+      this.mensaje = '🚫  Lo sentimos, no es posible dejarte continuar';
 
     }
   }

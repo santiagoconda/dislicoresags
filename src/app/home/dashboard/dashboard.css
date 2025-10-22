@@ -5,10 +5,11 @@
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
 }
 .hero-title {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
+  font-family: 'Ailey Display', 'Poller One', sans-serif;
+  background: linear-gradient(to bottom, #D96314, #E7B505);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
 }
 .hero-container {
   display: flex;
@@ -30,11 +31,9 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 10px ;
-  /* max-width: 400px; */
-  /* margin: 80px auto; */
+
   text-align: center;
   color: #fff;
   backdrop-filter: blur(8px);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-  animation: fadeIn 1s ease;
 }
