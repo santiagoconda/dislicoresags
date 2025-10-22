@@ -1,0 +1,11 @@
+
+
+.img-logo-ags{
+    width: 200px;
+    height: 120px;
+}
+.container-botones{
+    display: flex;
+    flex-direction: column;
+
+}

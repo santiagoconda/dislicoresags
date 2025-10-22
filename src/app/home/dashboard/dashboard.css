@@ -1,0 +1,10 @@
+.container{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.container-dashboar{
+    background-color: black;
+    height: 100%;
+}
