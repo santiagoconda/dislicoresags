@@ -7,14 +7,15 @@
             <div class="hero-form">
                 <p class="form-text">Debes tener 18 años para visitar nuestro sitio</p>
 
-                <form>
+                <form (ngSubmit)="verificarEdad()">
                     <label for="date" class="form-label">Verifiquemos tu edad</label>
-                    <input type="date" id="date" class="form-input" required />
+                    <input type="date" id="date" class="form-input" required [(ngModel)]="fechaNacimiento"  name="fechaNacimiento" />
+                    <button type="submit" class="hero-button">Ingresar</button>
                 </form>
-                <button type="submit" class="hero-button">Ingresar</button>
 
             </div>
 
+        <p *ngIf="mensaje" class="mensaje">{{ mensaje }}</p>
 
         </div>
     </div>

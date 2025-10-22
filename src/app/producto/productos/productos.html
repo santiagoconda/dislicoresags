@@ -1,0 +1,8 @@
+<p>productos works!</p>
+<div class="productos">
+  <div class="producto-card" *ngFor="let p of items">
+    <img [src]="p.imagen" [alt]="p.nombre">
+    <h2>{{ p.nombre }}</h2>
+    <p>{{ p.descripcion }}</p>
+  </div>
+</div>
