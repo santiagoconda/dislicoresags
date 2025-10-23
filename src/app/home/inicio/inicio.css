@@ -75,20 +75,16 @@
     transform: translateY(0);
   }
 }
-.hero-footer {
-  padding: 40px 20px 20px;
-  text-align: center;
-  color: #ccc;
-  position: relative;
-}
+
 
 .footer-logos {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  padding: 30px 10px 10px;
+  /* margin-bottom: 20px; */
 }
 
 .hero-logo-footer {
@@ -105,20 +101,8 @@
   filter: brightness(1);
 }
 
-.footer-text p {
-  font-size: 0.9rem;
-  color: #aaa;
-  margin: 0 auto 15px;
-  line-height: 1.4;
-}
 
-.footer-copy {
-  font-size: 0.8rem;
-  color: #777;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 20px;
-  padding-top: 10px;
-}
+
 
 .form-label {
   display: block;
