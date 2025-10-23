@@ -1,17 +1,22 @@
-<div class="container-nav">
-    <div class="conatiner-img-logo">
-        <img class="img-logo-ags" src="assets/dislicores.png" alt="">
+<header class="site-header">
+    <div class="container">
+        <a class="brand" routerLink="/">
+            <img class="brand-logo" src="assets/dislicores.png" alt="Logo de Dislicores" />
+        </a>
+        <button class="menu-toggle" id="menu-toggle">
+            <span class="burger" (click)="toggleMenuWithDOM()"></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-list">
+                <li><a routerLink="/">Inicio</a></li>
+                <li><a routerLink="/catalogo">Nosotros</a></li>
+                <li><a routerLink="/ofertas">Ofertas</a></li>
+                <li><a routerLink="/tiendas">Ubicación</a></li>
+            </ul>
+            <form class="search-form">
+                <input type="search" class="search-input" placeholder="Buscar producto o marca..." />
+                <button class="search-btn" aria-label="Buscar"></button>
+            </form>
+        </nav>
     </div>
-    <div>
-        <h1>BIENVENIDOS</h1>
-    </div>
-    <div >
-        <li class="container-botones">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-        </li>
-    </div>
-</div>
+</header>
