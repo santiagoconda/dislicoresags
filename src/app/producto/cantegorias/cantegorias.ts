@@ -50,7 +50,7 @@ export class Cantegorias {
 
    ngOnInit() {
     this.intervalo = setInterval(() => {
-      this.siguiente();
+      // this.siguiente();
     }, 3000); // cada 3 segundos
   }
     siguiente() {

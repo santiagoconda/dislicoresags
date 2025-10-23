@@ -1,87 +1,116 @@
+.carrusel-container {
+  width: auto;
+  padding: 0 10px;
+  height: 50%;
+}
+
+.carrusel-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.categorias-card {
+  position: relative;
+  flex: 0 0 calc(31.100% - 130px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  /* overflow: hidden; */
+}
+
+.categorias-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.555);
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
 
 .card-content h2 {
   font-family: 'Ailey Display', 'Poller One', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   background: linear-gradient(to bottom, #D96314, #E7B505);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   line-height: 1.2;
   word-wrap: break-word;
 }
 
-/* ===== BOTÓN ===== */
+.card-description {
+  font-size: 1rem; 
+  line-height: 1.4;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
 .card-button {
-  transform: translateY(20px);
   background: linear-gradient(135deg, #802035, #D96314);
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   white-space: nowrap;
 }
 
-/* ===== CONTENEDOR PRINCIPAL ===== */
-.carrusel-container {
-  width: 100%;
-  /* overflow: hidden; */
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-/* ===== CARRUSEL ===== */
-.carrusel-wrapper {
-  display: flex;
-  transition: transform 0.8s ease-in-out;
-  will-change: transform;
-}
-
-/* ===== CARD ===== */
-.categorias-card {
-  flex: 0 0 calc(100% / 3);
-  box-sizing: border-box;
-  margin: 0 10px;
-  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-  border-radius: 16px;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+.card-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #D96314, #E7B505);
 }
 
 .categorias-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.02);
 }
 
-/* ===== RESPONSIVE BREAKPOINTS ===== */
 
-/* 🔸 Tablets: muestra 2 cards */
 @media (max-width: 992px) {
   .categorias-card {
-    flex: 0 0 calc(100% / 2);
-    margin: 0 8px;
+    flex: 0 0 calc(50% - 16px);
+    padding: 30px 15px;
   }
 
   .card-content h2 {
     font-size: 1.6rem;
   }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
 }
 
-/* 🔸 Celulares: muestra 1 card */
 @media (max-width: 600px) {
   .categorias-card {
     flex: 0 0 100%;
-    margin: 0 5px;
+    padding: 25px 10px;
   }
 
   .card-content h2 {
     font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
   }
 
   .card-button {

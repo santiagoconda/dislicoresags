@@ -10,10 +10,13 @@
 
 <div class="carrusel-container">
   <div class="carrusel-wrapper" [style.transform]="transformValue">
-    <div class="categorias-card" *ngFor="let categoria of categorias"       [ngStyle]="{
+    <div
+      class="categorias-card"
+      *ngFor="let categoria of categorias"
+      [ngStyle]="{
         'background-image': 'url(' + categoria.imagen + ')'
       }"
->
+    >
       <div class="card-content">
         <h2>{{ categoria.name }}</h2>
         <p class="card-description">{{ categoria.description }}</p>

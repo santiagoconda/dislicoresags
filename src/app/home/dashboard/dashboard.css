@@ -1,41 +1,19 @@
 .hero-logo {
-  width: 200px;
-  height: auto;
+  width: 100px;
+  height: 100;
   margin-bottom: 20px;
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
 }
-.hero-title {
-  font-family: 'Ailey Display', 'Poller One', sans-serif;
-  background: linear-gradient(to bottom, #D96314, #E7B505);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; 
-}
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  text-align: center;
-  position: relative;
-}
-.hero-content {
-  z-index: 1;
-  max-width: 600px;
-  padding: 20px;
-  animation: fadeIn 1.5s ease;
-}
+.contenido{
+  height: 400px;
+  overflow-y: scroll; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
 
-.hero-form {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 10px ;
 
-  text-align: center;
-  color: #fff;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.contenido::-webkit-scrollbar {
+  display: none;
 }
 
 /* .layout {
